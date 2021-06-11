@@ -1,0 +1,94 @@
+.customer-image{
+   height: 8rem;
+    width:8rem;
+    margin-top:1.5rem;
+}
+.container{
+    position: relative;
+   width:45rem;
+  border-radius: 40px 1px 40px 1px;
+   font-size:1.2rem;
+  right:10%;
+    background: white;
+    height:16rem;
+  overflow: hidden;
+    margin:1.2rem 0;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: left;
+     display: flex;
+    flex-direction: row;
+   justify-content: space-around;  
+   align-items: flex-start;
+   box-shadow:2px 2px 3px 0.5px black;
+}
+main{
+   
+    margin-top: 3%; 
+    
+}  
+.Badge-customer{
+    position: absolute;
+    top:0;
+    right:0;
+    color:white;
+    background: brown;
+    padding:0.3rem; 
+    width:15rem;
+    text-align: center;
+  
+    transform:rotateZ(45deg) translateY(7rem) translateY(-9rem) translateX(3.5rem);
+}
+.container:hover,
+.container:active{
+    transform: translateY(-2rem);
+    transition: transform 200ms ease-out;
+}
+.para-first{
+    width:35rem;
+    padding:0.5rem;
+
+    
+}
+#para-two{
+    position: relative;
+    float:right;
+    right:3%;
+}
+.clearfix{
+    clear: both;
+}
+
+@media(max-width:39rem){
+    .customer-image{
+        height: 6rem;
+         width:6rem;
+         margin-top:1rem;
+     }
+     .container{
+         position: relative;
+        width:22rem;
+       border-radius: 40px 1px 40px 1px;
+        font-size:1.1rem;
+       right:10%;
+         background: white;
+         height:17rem;
+       overflow: hidden;
+         margin:1.5rem 0;
+         margin-left:auto;
+         margin-right: auto;
+         text-align: left;
+          display: flex;
+         flex-direction: row;
+        justify-content: space-around;  
+        align-items: flex-start;
+        box-shadow:2px 2px 3px 0.5px black;
+     }
+     main{
+   
+        margin-top: 11%; 
+        
+        height: 65rem !important;
+    }  
+
+}

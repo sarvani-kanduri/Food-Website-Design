@@ -1,0 +1,219 @@
+.north_south_head h2{
+    position: relative;
+    left:-1%;
+    text-align: center;
+    font-weight:bolder;
+}
+.north_south_head{
+    margin-top: 0;
+}
+.food_list{
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    font-size: 1.5rem;
+    padding:1rem;
+    list-style: none;
+    align-items: center;
+    background: rgba(176, 199, 241, 0.774);
+border:0.2px solid cornflowerblue;
+box-shadow: 3px 3px 3px 0.6px black;
+
+}
+.details,
+.order{
+    background:rgb(14, 63, 14);
+    border:0.2px solid rgb(14, 63, 14);
+border-radius: 8px;
+    font-size:1.2rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    width:8rem;
+    text-decoration: none;
+    margin-left: 3rem;
+
+}
+.order{
+    margin-left: 5rem;
+    
+}
+.details:hover,
+.order:hover,
+.details:active,
+.order:active{
+    color:rgb(14, 63, 14);
+    background:white;
+}
+.third-list{
+ position: absolute;
+ left:47%;
+}
+.badge{
+    color:#f54227;
+   /*  background:white;
+    border:0.2px solid white; */
+    font-weight: bold;
+
+    font-size:1.1rem;
+ text-align: center;
+    width:8rem;
+    animation: badge 200ms 100ms 15 alternate ease-out;
+
+}
+.ordering-details{
+   display: none;
+     opacity: 0;
+    transform: translateY(-3rem);
+    transition: transform 200ms ease-out; 
+   
+    position: fixed;
+    top:20%;
+    left:40%; 
+ display: grid;
+ grid-template-rows:2rem 2rem 2.5rem;
+ grid-template-columns:12rem 15rem;
+ grid-gap:1rem 0.5rem;
+z-index:400;
+
+   width:40rem;
+    border:0.2px solid white;
+    background:white;
+   padding:3rem;
+    text-align:center;
+    font-size:1rem;
+    
+}
+
+.ordering-details label{
+    font-weight: bold;
+   
+}
+.ordering-details input,
+.ordering-details select{
+    border: 0.5px solid #ccc;
+    padding: 0.2rem 3rem;
+   
+
+}
+.ordering-details input:focus,
+.ordering-details select:focus{
+
+    outline: hotpink; 
+   
+    border-color:#30e6d6;
+
+}
+.clasification{
+    display: inline-block;
+    text-align: center;
+}
+
+.placed{
+    text-align: center;
+    position: absolute;
+ font-size:1.5rem;
+    left:40%;
+    top:40%
+}
+.noorder{
+    text-align: center;
+   color:white;
+   font-weight: bold;
+   background:red;
+   font-size:1.3rem;
+   border:0.2px solid red;
+   border-radius: 8px;
+   padding:0.5rem 0.5rem;
+   width:8rem;
+   margin-left:3rem;
+   cursor: pointer;
+}
+main{
+   
+     margin-top: 1%; 
+} 
+.noorder:hover,
+.noorder:active{
+    background: white;
+    color:red;
+}
+@keyframes badge {
+    0%{
+        transform: rotateZ(0);
+    }
+    50%{
+        transform: rotateZ(-20deg);
+    }
+    100%{
+        transform: rotateZ(20deg);
+    }
+    
+}
+@media(max-width:39rem){
+    .food_list{
+        font-size: 1.5rem;
+        padding:1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:center;
+        height:10rem;
+        width:25rem;
+     margin-left: auto;
+        margin-right: auto; 
+       
+    }
+    .food_list li{
+        padding:0.5rem;
+    }
+    .third-list{
+        position: static;
+       
+       }
+       .details{
+
+    
+    font-size:1.2rem;
+    padding: 0.5rem;
+    font-weight: bold;
+   
+    width:8rem;
+    text-decoration: none;
+    margin-left: 15rem;
+    
+
+}
+.north_south_head{
+   margin-top: 15%;
+}
+.ordering-details{
+ 
+    width:24rem;
+     left:5%; 
+     display: grid;
+     grid-template-rows:2rem 2rem 2.5rem;
+     grid-template-columns:9rem 9rem;
+     grid-gap:1rem 0.5rem;
+     padding:2.5rem;
+     top:15%;
+}
+
+.order{
+    margin-left: 1rem;
+}
+}
+@media (min-width:40rem) and (max-width:50rem){
+
+    .ordering-details{
+        left:5%;
+        width:34rem;
+    }
+    .food_list{
+        margin-left: auto;
+        margin-right: auto; 
+       
+    }
+}
